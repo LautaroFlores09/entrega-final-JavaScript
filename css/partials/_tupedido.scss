@@ -1,0 +1,55 @@
+.tupedido{
+     display: flex;
+     padding: 24px;
+     background-color: $backgroundcolor;
+     justify-content: space-around;
+     .redessociales{
+          display: flex;
+          flex-direction: column;
+          h2{
+               font-family: $tipotitle;
+               color: $titles;
+               letter-spacing: 5px;
+          }
+          .redessociales__contacto{
+               display: flex;
+                    .redessociales__contacto-container{
+                         margin-right:50px;
+                         .redessociales__contacto-container-icons{
+                              display: flex;
+                              align-items: center;
+                              margin-top: 30px;
+                              .bi{
+                                   background-color: $titles;
+                                   color: $color3;
+                                   padding: 20px;
+                                   border-radius: 1000px;
+                              }
+                              h3{
+                                   margin-left: 10px;
+                                   font-family: $tipotxt;
+                                   color: $color3;
+                              }
+                         }
+                    }
+          }
+     }
+     .local{
+          h2{
+               font-family: $tipotitle;
+               color: $titles;
+               letter-spacing: 5px;  
+          }
+          p{
+               margin-left: 10px;
+               font-family: $tipotxt;
+               color: $color3;
+               font-size: 30px;
+               letter-spacing: 3px;
+          }
+          iframe{
+               height: 500px;
+               width: 500px;
+          }
+     }
+}

@@ -1,0 +1,108 @@
+body{
+          .hero{
+               background-image: url("/assets/img/mainbackground.jpg");
+               height: 1080px;
+               width: 100%;
+               background-repeat: no-repeat;
+               background-size: cover; 
+               background-position: center center; 
+          header{
+               nav{
+                    background-color: transparent;
+                    .mainmenu{
+                         img{
+                              width: 200px;
+                              margin-right: 80px;
+                         }
+                         div{
+
+                              ul{
+                                   font-family: $tipotxt;
+                                   font-size: 23px;
+                                   li{
+                                        margin-left: 50px;
+                                        a{
+                                             color: $color3;
+                                             text-shadow: 2px 2px black;
+                                             letter-spacing: 3px;
+                                             &:hover{
+                                                  color: $titles;
+                                                  text-shadow: none;
+                                             }
+                                        }
+                                   }
+                              }
+                         }
+                    }
+               }
+          }
+          .pricipal{
+               .maintitulos{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center center;
+                    align-items: center center;
+                    margin-top: 300px;
+                    h1{
+                         text-align: center;
+                         font-family: $tipotitle;
+                         color: $color3;
+                         font-size: 70px;
+                         letter-spacing: 7px;
+                         text-shadow: 5px 5px black;
+                    }
+                    h4{
+                         text-align: center;
+                         font-family: $tipotxt;
+                         color: $color3;
+                    }
+               }
+          }
+     }
+}
+@media only screen and (min-width: 769px) and (max-width: 991px){
+body{
+     .hero{
+          .pricipal{
+               .maintitulos{
+                    h1{
+                         font-size: 50px;
+                    }
+               }
+          }
+     }
+}
+}
+@media only screen and (min-width: 481px) and (max-width: 768px){
+     body{
+          .hero{
+               .pricipal{
+                    .maintitulos{
+                         h1{
+                              font-size: 50px;
+                         }
+                         h4{
+                              font-size: 20px;
+                         }
+                    }
+               }
+          }
+     }
+     }
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+     body{
+          .hero{
+               .pricipal{
+                    .maintitulos{
+                         h1{
+                              font-size: 30px;
+                         }
+                         h4{
+                              font-size: 15px;
+                         }
+                    }
+               }
+          }
+     }
+}

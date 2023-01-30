@@ -1,0 +1,27 @@
+[
+     {
+          "id":"pollo-01",
+          "titulo":"POLLO FRITO",
+          "imagen":"/assets/img/pollo-frito-menu.png",  
+          "precio":3000
+     },
+     {
+          "id":"hamburguesa-02",
+          "titulo":"HAMBURGUESA COMPLETA",
+          "imagen":"/assets/img/hamburguesa-menu (1).png",
+          "precio":3200
+     },
+     {
+          "id":"hamburguesa-03",
+          "titulo":"HAMBURGUESA DE POLLO",
+          "imagen":"/assets/img/hamburguesa-pollo-menu.png",
+          "precio":2500
+     },
+     {
+          "id":"pizza-04",
+          "titulo":"PIZZA",
+          "imagen":"/assets/img/pizza-menu.png",
+          "precio":1800
+     }
+     
+]

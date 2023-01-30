@@ -1,0 +1,173 @@
+ul{
+     list-style-type: none;
+}
+.contenedor{
+     display: grid;
+     grid-template-columns: 1fr 4fr;
+     background-color:$titles ;
+          aside{
+               
+               padding: 2rem;
+               padding-right: 0px;
+               position: sticky;
+               top: 0;
+               height: 100vh;
+               display: flex;
+               flex-direction: column;
+               header{
+                    a{
+                         img{
+                              margin-bottom: 50px;
+                              margin-top: 40px;
+                         }
+                    }
+               }
+                    nav{
+                         ul{
+                              display: flex;
+                              flex-direction: column;
+                              gap: 1rem;
+                              li{
+                                   .boton-menu{
+                                        background-color: transparent;
+                                        border: 0;
+                                        font-size: 1.2rem;
+                                        cursor: pointer;
+                                        padding: 1rem;
+                                        align-items: center;
+                                        color: white;
+                                        font-family: $tipotitle;
+                                        
+
+                                   }
+                                   .boton-menu.active{
+                                        display: flex;
+                                        background-color:$backgroundcolor ;
+                                        width: 100%;
+                                        border-top-left-radius:1rem ;
+                                        border-bottom-left-radius: 1rem;
+                                   }
+                              }
+                         }
+                    }
+          }
+          main{
+               background-color: $backgroundcolor;
+               margin: 1rem;
+               margin-left: 0;
+               border-radius: 2rem;
+               padding: 3rem;
+                    .titulo-carrito{
+                         color: white;
+                         font-family: $tipotitle;
+                         font-size: 3.5rem;
+                         letter-spacing: .3rem;
+                         
+                    }
+                    .contenedor-carrito{
+                         display: flex;
+                         flex-direction: column;
+                         gap: 1.5rem;
+                         .carrito-vacio{
+                              color:$titles;
+                              font-family: $tipotxt;
+                              font-size: 1.2rem;
+                         }
+                         .disabled{
+                              display: none !important;
+                         }
+                         .carrito-productos{
+                              display: flex;
+                              flex-direction: column;
+                              grid-area: 1rem;
+                                   .carrito-producto{
+                                        display: flex;
+                                        justify-content:space-between;
+                                        align-items: center;
+                                        background-color:#2e1806 ;
+                                        color: $titles;
+                                        padding: .5rem;
+                                        padding-right: 1.5rem;
+                                        border-radius: 1rem;
+                                        img{
+                                             width: 5rem;
+                                             
+                                        }
+                                        .carrito-producto-nombre,
+                                        .carrito-producto-cantidad,
+                                        .carrito-producto-precio,
+                                        .carrito-producto-subtotal{
+                                             small{
+                                                  font-size: .85rem;
+                                                  font-family: $tipotitle;
+                                             }
+                                             p{
+                                                  font-family: $tipotxt;
+                                             }
+                                        }
+                                        .carrito-producto-nombre{
+                                             h3{
+                                                  font-family: $tipotxt;
+                                             }
+                                        }
+                                        .carrito-producto-eliminar{
+                                             border: 0;
+                                             background-color: transparent;
+                                             font-size: 17px;
+                                             color: $titles;
+                                             cursor: pointer;
+                                        }
+                                   }
+                         }
+                         .carrito-acciones{
+                              display: flex;
+                              justify-content: space-between;
+                                   .carrito-acciones-izquierda{
+                                             .carrito-acciones-vaciar{
+                                                  border: 0;
+                                                  background-color: #2e1806;
+                                                  padding: 1rem;
+                                                  border-radius: 1rem;
+                                                  text-transform: uppercase;
+                                                  cursor: pointer;
+                                                  color: white;
+                                                  font-family: $tipotxt;
+                                             }
+                                   }
+                                   .carrito-acciones-derecha{
+                                        display: flex;
+                                        .carrito-acciones-total{
+                                             display: flex;
+                                             background-color: #2e1806;
+                                             padding: 1rem;
+                                             border-top-left-radius: 1rem;
+                                             border-bottom-left-radius: 1rem;
+                                             text-transform: uppercase;
+                                             color: white;
+                                             gap: 1rem;
+                                             font-family: $tipotxt;
+                                        }
+                                        .carrito-acciones-comprar{
+                                             border: 0;
+                                             background-color: $titles;
+                                             padding: 1rem;
+                                             text-transform: uppercase;
+                                             border-top-right-radius: 1rem;
+                                             border-bottom-right-radius: 1rem;
+                                             text-transform: uppercase;
+                                             cursor: pointer;
+                                             font-family: $tipotitle;
+                                             font-size: 1rem;
+                                        }
+                                   }
+                         }
+                         .carrito-comprado{
+                              color:$titles;
+                              font-family: $tipotxt;
+                              font-size: 1.2rem;
+                         }
+
+                    }
+
+          }
+}

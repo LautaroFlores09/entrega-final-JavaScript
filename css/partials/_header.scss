@@ -1,0 +1,43 @@
+header{
+     .navmenu{
+          background-color: $backgroundcolor;
+          &__menu{
+               img{
+                    width: 200px;
+                    margin-right: 80px;
+               }
+               div{
+                    ul{
+                         font-family: $tipotxt;
+                         font-size: 23px;
+                         li{
+                              margin-left: 50px;
+                              a{
+                                   text-decoration: none;
+                                   .numerito{
+                                        padding: 0 .25rem;
+                                        border-radius: .25rem;
+                                   }
+                              }
+                              p{
+                                   a{
+                                        img{
+                                             width: 50px;
+                                        }
+                                   }
+                              }
+                              a{
+                                   color: $color3;
+                                   text-shadow: 2px 2px black;
+                                   letter-spacing: 3px;
+                                   &:hover{
+                                        color: $titles;
+                                        text-shadow: none;
+                                   }
+                              }
+                         }
+                    }
+               }
+          }
+     }
+}
